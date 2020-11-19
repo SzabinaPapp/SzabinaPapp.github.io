@@ -139,6 +139,13 @@ ul {
   font-family: 'Lora', serif;
 }
 
+@media screen and (max-width: 40em) {
+  .donation-container {
+    position: relative;
+    left: 5px;
+  }
+}
+
 .donation {
   padding: 20px;
   font-size: 18px;

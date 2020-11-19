@@ -126,6 +126,11 @@ border-radius: 5px;
 	border-radius: 10%;
 	box-shadow: 0 0 10px 10px rgb(28, 169, 194);
 	font-family: 'Lora', serif;
+
+	@media screen and (max-width: 40em) {
+		position: relative;
+		left: 5px;
+	}
 }
 
 .donation {
