@@ -139,7 +139,7 @@ ul {
   font-family: 'Lora', serif;
 }
 
-@media screen and (max-width: 80em) {
+@media screen and (max-width: 1500px) {
   .donation-container {
     position: relative;
     left: 5px;
