@@ -143,6 +143,7 @@ ul {
   .donation-container {
     position: relative;
     left: 5px;
+    width: 300px;
   }
 }
 
