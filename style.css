@@ -93,6 +93,7 @@ body {
   display: flex;
   width: 100%;
   padding: 0 20px;
+  margin: -10vh auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -117,11 +118,6 @@ body {
   margin-right: auto;
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
-}
-
-.container .text-container .background2 {
-  margin: 100px 0;
-  z-index: 1;
 }
 
 .container .secondpicture-container {
@@ -155,23 +151,6 @@ body {
   font-size: 24px;
   line-height: 47px;
   color: white;
-}
-
-.container .text-containers .leftlines {
-  margin: 0 auto auto 20px;
-  min-width: 100px;
-  max-width: 495px;
-  margin: -100px 50px -100px 25px;
-}
-
-.container .text-containers .rightlines {
-  margin: -350px 0 180px 1570px;
-  min-width: 100px;
-  max-width: 480px;
-  max-height: 100px;
-  margin-top: -350px;
-  margin-bottom: 212px;
-  margin-right: 180px;
 }
 
 .container .van_container {

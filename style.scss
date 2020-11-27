@@ -74,7 +74,7 @@ body {
 		display: flex;
 		width: 100%;
 		padding: 0 20px;
-		// margin: -10vh auto;
+		margin: -10vh auto;
 		justify-content: center;
 		align-items: center;
 		max-width: 840px;
@@ -94,10 +94,6 @@ body {
 			margin-right: auto;
 			font-family: 'Montserrat', sans-serif;
 			font-size: 50px
-		}
-		.background2 {
-			margin: 100px 0;
-			z-index: 1;
 		}
 	}
 	.secondpicture-container {
@@ -129,24 +125,22 @@ body {
 			line-height: 47px;
 			color: white;
 		}
-
-		.leftlines {
-			margin: 0 auto auto 20px;
-			min-width: 100px;
-			max-width: 495px;
-			margin: -100px 50px -100px 25px;
-		}
-
-		.rightlines {
-			margin: -350px 0 180px 1570px;
-			min-width: 100px;
-			max-width: 480px;
-			max-height: 100px;
-			margin-top: -350px;
-			margin-bottom: 212px;
-			margin-right: 180px;
-		}
 	}
+	// .leftlines {
+	// 	// margin: 0 auto auto 20px;
+	// 	min-width: 100px;
+	// 	max-width: 495px;
+	// 	margin: -100px 50px -100px 25px;
+	// }
+	// .rightlines {
+	// 	margin: -350px 0 180px 1570px;
+	// 	min-width: 100px;
+	// 	max-width: 480px;
+	// 	max-height: 100px;
+	// 	margin-top: -350px;
+	// 	margin-bottom: 212px;
+	// 	margin-right: 180px;
+	// }
 	.van_container {
 		width: 100%;
 		max-width: 1340px;
