@@ -101,7 +101,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   max-width: 840px;
-  margin: 0 auto;
 }
 
 .container .text-container .textlefticon {
