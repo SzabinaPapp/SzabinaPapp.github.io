@@ -1,0 +1,13 @@
+{
+	"emmet.includeLanguages": {
+		"ejs": "html",
+},
+
+	"liveServer.settings.ignoreFiles": [
+
+		".vscode/**",
+		"**/*.scss",
+		"**/*.sass",
+		"**/*.ts"
+	]
+}
