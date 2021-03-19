@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  padding: 40px;
+  gap: 40px;
+	background-color: #EFD592;
+	font-family: 'Roboto', sans-serif;
+	
+	.first-container,
+	.second-container {
+		flex-basis: 50%;
+		flex-direction: row;
+		height: 100%;
+
+		.hamburger {
+			margin-right: 30px;
+			width: 100%;
+
+			.navbar {
+				position: relative;
+				float: right;
+				right: 0;
+				height: 75px;
+				width: 75px;
+				margin: 0;
+				padding: 0;
+				border-radius: 50px;
+
+				&-toggler {
+					position: absolute;
+					left: 50%;
+					transform: translate(-50%);
+					border: none;
+					outline: none;
+
+					&-icon {
+						width: 2.5em;
+						height: 2.5em;
+					}
+				}
+			}
+		}
+		h1 {
+			font-weight: 800;
+			margin-top: 3em;
+			margin-bottom: 50px;
+		}
+		p {
+			margin-bottom: 50px;
+			width: 80%;
+			line-height: 2em;
+		}
+
+		h6 {
+			font-weight: 700;
+			letter-spacing: 3px;
+		}
+	}
+
+	.second-container {
+		background-color: #242D38;
+	}
+}

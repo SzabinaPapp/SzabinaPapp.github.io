@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  height: 100vh;
+  padding: 40px;
+  gap: 40px;
+  background-color: #EFD592;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app .first-container,
+.app .second-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+}
+
+.app .first-container .hamburger,
+.app .second-container .hamburger {
+  margin-right: 30px;
+  width: 100%;
+}
+
+.app .first-container .hamburger .navbar,
+.app .second-container .hamburger .navbar {
+  position: relative;
+  float: right;
+  right: 0;
+  height: 75px;
+  width: 75px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50px;
+}
+
+.app .first-container .hamburger .navbar-toggler,
+.app .second-container .hamburger .navbar-toggler {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: none;
+  outline: none;
+}
+
+.app .first-container .hamburger .navbar-toggler-icon,
+.app .second-container .hamburger .navbar-toggler-icon {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.app .first-container h1,
+.app .second-container h1 {
+  font-weight: 800;
+  margin-top: 3em;
+  margin-bottom: 50px;
+}
+
+.app .first-container p,
+.app .second-container p {
+  margin-bottom: 50px;
+  width: 80%;
+  line-height: 2em;
+}
+
+.app .first-container h6,
+.app .second-container h6 {
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.app .second-container {
+  background-color: #242D38;
+}
+/*# sourceMappingURL=style.css.map */
