@@ -7,6 +7,75 @@
           box-sizing: border-box;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #EFD592;
+}
+
+.hamburger {
+  margin-right: 30px;
+  width: 30%;
+  z-index: 3;
+}
+
+.hamburger .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(239,213,146)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.hamburger .custom-toggler.navbar-toggler {
+  border-color: #efd592;
+}
+
+.hamburger .navbar {
+  position: absolute;
+  float: right;
+  right: 2em;
+  top: 1em;
+  height: 75px;
+  width: 75px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger .navbar {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.hamburger .navbar-toggler {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: none;
+  outline: none;
+}
+
+.hamburger .navbar-toggler.custom.toggler {
+  border: green;
+}
+
+.hamburger .navbar-toggler-icon {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger .navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+  }
+}
+
 .app {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,8 +87,26 @@
   height: 100vh;
   padding: 40px;
   gap: 40px;
-  background-color: #EFD592;
   font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  .app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .app .first-container,
@@ -33,45 +120,37 @@
   height: 100%;
 }
 
-.app .first-container .hamburger,
-.app .second-container .hamburger {
-  margin-right: 30px;
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .app .first-container,
+  .app .second-container {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 50%;
+  }
 }
 
-.app .first-container .hamburger .navbar,
-.app .second-container .hamburger .navbar {
-  position: relative;
-  float: right;
-  right: 0;
-  height: 75px;
-  width: 75px;
-  margin: 0;
-  padding: 0;
-  border-radius: 50px;
-}
-
-.app .first-container .hamburger .navbar-toggler,
-.app .second-container .hamburger .navbar-toggler {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  border: none;
-  outline: none;
-}
-
-.app .first-container .hamburger .navbar-toggler-icon,
-.app .second-container .hamburger .navbar-toggler-icon {
-  width: 2.5em;
-  height: 2.5em;
+@media screen and (max-width: 453px) {
+  .app .first-container,
+  .app .second-container {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 50%;
+  }
 }
 
 .app .first-container h1,
 .app .second-container h1 {
   font-weight: 800;
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 453px) {
+  .app .first-container h1,
+  .app .second-container h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .app .first-container p,
@@ -81,10 +160,26 @@
   line-height: 2em;
 }
 
+@media screen and (max-width: 453px) {
+  .app .first-container p,
+  .app .second-container p {
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    width: 90%;
+  }
+}
+
 .app .first-container h6,
 .app .second-container h6 {
   font-weight: 700;
   letter-spacing: 3px;
+}
+
+@media screen and (max-width: 453px) {
+  .app .first-container h6,
+  .app .second-container h6 {
+    margin-bottom: 1em;
+  }
 }
 
 .app .second-container {
