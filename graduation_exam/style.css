@@ -1,0 +1,205 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  *,
+  *::after,
+  *::before {
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  *,
+  *::after,
+  *::before {
+    overflow: scroll;
+  }
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FBB03B;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .mainContainer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #138073;
+}
+
+@media screen and (max-width: 768px) {
+  body .mainContainer {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  body .mainContainer {
+    text-align: left;
+  }
+}
+
+body .mainContainer .title {
+  margin-top: 0.5em;
+  font-weight: 200;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  body .mainContainer .title {
+    text-align: left;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  body .mainContainer .title {
+    text-align: left;
+  }
+}
+
+body .hamburger {
+  margin-right: 30px;
+  width: 30%;
+  z-index: 3;
+}
+
+body .hamburger .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+body .hamburger .custom-toggler.navbar-toggler {
+  border-color: white;
+}
+
+body .hamburger .bg-dark {
+  background-color: #138073 !important;
+}
+
+body .hamburger .navbar {
+  position: absolute;
+  float: right;
+  right: 2em;
+  top: 1em;
+  height: 75px;
+  width: 75px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  body .hamburger .navbar {
+    height: 60px;
+    width: 60px;
+    right: 1em;
+  }
+}
+
+body .hamburger .navbar-toggler {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: none;
+  outline: none;
+}
+
+body .hamburger .navbar-toggler-icon {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+@media screen and (max-width: 768px) {
+  body .hamburger .navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+  }
+}
+
+body .login-container {
+  margin-top: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70vw;
+}
+
+body .registration {
+  font-size: 40px;
+  color: yellow;
+  padding: 10px;
+}
+
+body .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .check-field {
+  width: 100%;
+}
+
+body .input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+body .form-field button {
+  color: yellow;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  background-color: #0f6464;
+}
+
+body .btn:hover {
+  background-color: #82d4d4;
+  color: black;
+  opacity: 1;
+  /*border: 2px solid grey;*/
+}
+/*# sourceMappingURL=style.css.map */
